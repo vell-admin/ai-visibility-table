@@ -8,7 +8,7 @@ By [Ron Davis](https://www.itsrondavis.com) · Edition 2026.2 · audited 2026-10
 
 This repository is the table as data, the table as a wallchart, and the table as eight installable AI skills you drop into Claude, ChatGPT, Gemini or Copilot. An element is one thing you can fix on its own. A blank square is an element you do not have yet. Find the blank squares and you can predict what an answer engine does with your site before you ever ask it.
 
-[**Open the interactive wallchart →**](https://vell-admin.github.io/ai-visibility-table/table/) · [elements.json](data/elements.json) · [elements.csv](data/elements.csv) · [36 questions](data/questions.json) · [the skills](skills/) · [one-file pack](pack/ai-visibility-skill-pack.md)
+[**Open the interactive wallchart →**](https://agents.itsrondavis.com/ai-visibility/) · [elements.json](data/elements.json) · [elements.csv](data/elements.csv) · [36 questions](data/questions.json) · [the skills](skills/) · [one-file pack](pack/ai-visibility-skill-pack.md)
 
 ---
 

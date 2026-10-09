@@ -11,7 +11,7 @@ const CHROME = JSON.parse(fs.readFileSync(path.join(root, "kajabi/chrome.json"),
 
 const CANON = "https://www.itsrondavis.com/ai-visibility";
 const REPO = "https://github.com/vell-admin/ai-visibility-table";
-const PAGES = "https://vell-admin.github.io/ai-visibility-table/table/";
+const PAGES = "https://agents.itsrondavis.com/ai-visibility/";
 const CHECKOUT = "https://www.itsrondavis.com/offers/FudyCMoT/checkout";
 const NEWSLETTER_FORM = "2149622400";
 

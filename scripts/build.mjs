@@ -9,7 +9,7 @@ const Q = JSON.parse(fs.readFileSync(path.join(root, "data/questions.json"), "ut
 
 const CANON = "https://www.itsrondavis.com/ai-visibility";
 const REPO = "https://github.com/vell-admin/ai-visibility-table";
-const PAGES = "https://vell-admin.github.io/ai-visibility-table/table/";
+const PAGES = "https://agents.itsrondavis.com/ai-visibility/";
 const CALL = "https://www.itsrondavis.com/book-a-call";
 const NEWS = "https://www.itsrondavis.com/newsletter";
 
