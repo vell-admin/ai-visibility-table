@@ -1,0 +1,22 @@
+# Periodic Table of AI Visibility
+
+> Sixty-nine things that decide whether an answer engine (ChatGPT, Perplexity, Claude, Gemini, Copilot, Grok, Google AI Overviews and AI Mode) names your company. Compiled by Ron Davis. Edition 2026.2, audited 2026-10-02. Canonical page: https://www.itsrondavis.com/ai-visibility
+
+## Definitions
+- AI visibility is whether an answer engine names you when a buyer asks a category question. It covers four outcomes: ranking (position in a list), citation (a linked source inside the answer), mention (named, no link), and recognition (the model knows you without looking anything up).
+- An element is one thing you can fix on its own. An inhibitor is something to remove, not add.
+
+## Files
+- README.md: the table as text, the 36 buyer questions with answers, how to install the skills
+- data/elements.json: all 69 elements with symbol, group, time to effect, what it is, the move, examples, watch-out, 2026 audit note (CC BY 4.0)
+- data/elements.csv: the same rows as CSV
+- data/questions.json: 36 questions people type about AI visibility, with short answers
+- table/index.html: the interactive wallchart (public edition)
+- skills/: eight model-agnostic skills in Claude Agent Skill format (SKILL.md each)
+- pack/ai-visibility-skill-pack.md: all eight skills in one paste-in file
+- reference/: the weekend inhibitor checklist, the prompt-set worksheet, the vocabulary card
+
+## Offers
+- The AI Visibility Audit Kit (scorecard workbook, prompt-set tracker, file templates, runbook): https://www.itsrondavis.com/ai-visibility
+- Free 30-minute call with Ron Davis: https://www.itsrondavis.com/book-a-call
+- Newsletter: https://www.itsrondavis.com/newsletter

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this table or its data, please cite it as below."
+title: "Periodic Table of AI Visibility"
+abstract: "Sixty-nine things that decide whether an answer engine names you, grouped by what they do: the surfaces that cite, the plumbing that lets them read you, the signals they weigh, the artifacts worth citing, the channels that carry them, the numbers that tell you it worked, and the inhibitors to remove first."
+authors:
+  - family-names: Davis
+    given-names: Ron
+    website: "https://www.itsrondavis.com"
+version: "2026.2"
+date-released: "2026-10-02"
+url: "https://www.itsrondavis.com/ai-visibility"
+repository-code: "https://github.com/vell-admin/ai-visibility-table"
+license: "CC-BY-4.0"
+keywords:
+  - AI visibility
+  - generative engine optimization
+  - answer engine optimization
+  - llms.txt
+  - agents.txt
+  - share of voice

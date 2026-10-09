@@ -1,0 +1,62 @@
+{
+  "rhchrome_nav": {
+    "type": "section",
+    "name": "Site chrome — nav (ported from home)",
+    "block_order": ["rh_css", "rh_nav", "rh_type"],
+    "blocks": {
+      "rh_css": {
+        "type": "code",
+        "name": "Site chrome CSS",
+        "settings": {
+          "code": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');\n/* itsrondavis.com — SITE CHROME PORT (nav + footer from the home, 2026-09-20). Source of truth: the home theme 2166393107, block home_css. Ported to /ai-visibility 2026-10-09 by script; do not hand-edit here. */\n:root{\n  --rh-ground:#f7f5fb; --rh-ink:#16121f; --rh-purple:#330582; --rh-accent:#9a34cd;\n  --rh-mut:#5b5566; --rh-line:rgba(22,18,31,0.12); --rh-line-dk:rgba(255,255,255,0.16);\n  --rh-grad:linear-gradient(100deg,#330582 0%,#9a34cd 100%);\n  --rh-head:'Fraunces','Poppins',Georgia,serif; --rh-body:'Manrope','Inter',-apple-system,BlinkMacSystemFont,sans-serif;\n  --rh-mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;\n}\n:root{ --fs-h4:16px; --fs-sm:13px; --fs-nano:10px; --fs-micro:11px; }\n.rh-btn{ display:inline-flex !important; align-items:center !important; justify-content:center !important; box-sizing:border-box !important;\n  box-shadow:none !important; border-radius:6px !important; font-family:var(--rh-body) !important; font-weight:600 !important;\n  font-size:var(--fs-sm) !important; line-height:1 !important; letter-spacing:0 !important; white-space:nowrap !important;\n  padding:0 18px !important; text-decoration:none; cursor:pointer; transition:background 140ms ease,color 140ms ease; }\n.rh-btn{ background:transparent; border:1px solid var(--rh-purple) !important; color:var(--rh-purple); height:42px !important; }\n.rh-btn:hover{ background:var(--rh-purple); color:#fff; }\n#section-rhchrome_nav .section, #section-rhchrome_foot .section{ overflow:visible; }\n#section-rhchrome_nav .block, #section-rhchrome_foot .block{ padding:0; }\n#section-rhchrome_nav a, #section-rhchrome_foot a{ text-decoration:none; }\n#section-rhchrome_nav .sizer, #section-rhchrome_foot .sizer{ padding-top:0; padding-bottom:0; }\n#section-rhchrome_foot .sizer{ padding-top:28px; padding-bottom:28px; }\n#section-rhchrome_foot .sizer .container{ max-width:1202px; }\n#section-rhchrome_nav{ position:sticky; top:0; z-index:50; background:rgba(247,245,251,0.88); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--rh-line); }\n#section-rhchrome_nav .sizer, #section-rhchrome_nav .container{ padding-top:0 !important; padding-bottom:0 !important; }\n.rh-nav{ max-width:1240px; margin:0 auto; padding:14px 28px; box-sizing:border-box; display:flex; align-items:center; gap:24px; height:78px; }\n.rh-brand{ display:inline-flex; align-items:center; gap:10px; color:var(--rh-ink); flex-shrink:0; }\n.rh-dot{ width:24px; height:24px; border-radius:7px; background:var(--rh-grad); flex-shrink:0; }\n.rh-stack{ display:flex; flex-direction:column; gap:3px; }\n.rh-nm{ font-family:var(--rh-head); font-weight:500; font-size:var(--fs-h4); line-height:1; letter-spacing:-0.01em; color:var(--rh-ink); }\n.rh-tg{ font-family:var(--rh-mono); font-weight:500; font-size:var(--fs-nano); line-height:1; letter-spacing:0.16em; text-transform:uppercase; color:var(--rh-purple); }\n.rh-links{ display:flex; align-items:center; gap:22px; margin-left:14px; }\n.rh-links a{ position:relative; font-size:var(--fs-sm); font-weight:400; color:var(--rh-mut); transition:color 140ms ease; }\n.rh-links a:hover{ color:var(--rh-ink); }\n.rh-links a.active{ color:var(--rh-ink); }\n.rh-links a.active::after{ content:\"\"; position:absolute; left:0; right:0; bottom:-6px; height:2px; background:var(--rh-grad); border-radius:1px; }\n.rh-nav .rh-btn{ margin-left:auto; }\n@media (max-width:900px){ .rh-links{ display:none; } }\n@media (max-width:420px){ .rh-nav{ padding:14px 16px; gap:12px; } .rh-tg{ display:none; } .rh-nav .rh-btn{ padding:0 12px !important; } }\n#section-rhchrome_foot{ border-top:1px solid var(--rh-line); }\n.rh-foot{ display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:var(--fs-sm); color:var(--rh-mut); }\n.rh-foot nav{ display:flex; gap:18px; flex-wrap:wrap; }\n.rh-foot nav a{ color:var(--rh-mut); }\n.rh-foot nav a:hover{ color:var(--rh-ink); }\nbody > header.header, #section-header, #section-footer, .footer.footer--section{ display:none !important; }\n#section-rhchrome_nav > .section, #section-rhchrome_foot > .section{ padding:0; }\n#section-rhchrome_nav .rh-nav{ max-width:1240px; }\n#block-rh_css{ display:none; }\n#section-rhchrome_nav .nova-block-code, #section-rhchrome_foot .nova-block-code{ padding:0 !important; }\n#section-rhchrome_foot .rh-foot{ max-width:1184px; margin:0 auto; }\nbody nav:not(.rh-links):not(.rh-fnav), body footer:not(.rh-foot){ display:none !important; }\n</style>",
+          "width": "fill",
+          "mobile_width": "fill"
+        }
+      },
+      "rh_nav": {
+        "type": "code",
+        "name": "Nav",
+        "settings": {
+          "code": "<div class=\"rh-nav\"><a class=\"rh-brand\" href=\"/\"><span class=\"rh-dot\"></span><span class=\"rh-stack\"><span class=\"rh-nm\">Ron Davis</span><span class=\"rh-tg\">Marketplace &amp; AI Visibility GTM</span></span></a><nav class=\"rh-links\" aria-label=\"Primary\"><a href=\"/podcast\">Watch</a><a href=\"/newsletter\">Read</a><a href=\"/work-with-me\">Work with me</a><a href=\"/about\">About</a><a href=\"/partner\">Partner</a></nav><a class=\"rh-btn\" href=\"/#teardown\">Send me the teardown</a></div>",
+          "width": "fill",
+          "mobile_width": "fill"
+        }
+      },
+      "rh_type": {
+        "type": "code",
+        "name": "Site type",
+        "settings": {
+          "code": "<style>\n/* SITE TYPE v2 (2026-09-20) — faces + the 9/13 APP TYPE SCALE. Source of truth: home theme 2166393107, block home_css. Sizes only; this block may only LOWER a measured size. */\n:root{\n  --fs-display: clamp(30px, 3.2vw, 40px);\n  --fs-h1:      clamp(26px, 2.6vw, 32px);\n  --fs-h2:      clamp(21px, 2vw, 24px);\n  --fs-h3:      18px;\n  --fs-h4:      16px;\n  --fs-price:   clamp(28px, 2.6vw, 34px);\n  --fs-lede:    16px;\n  --fs-body:    14px;\n  --fs-sm:      13px;\n  --fs-xs:      12px;\n  --fs-micro:   11px;\n  --fs-nano:    10px;\n  --lh-display: 1.08; --lh-h1: 1.15; --lh-h2: 1.22; --lh-h3: 1.32; --lh-body: 1.6;\n  --tr-display: -0.022em; --tr-h1: -0.02em; --tr-h2: -0.018em; --tr-h3: -0.01em;\n}\nbody, body p, body li, body td, body input, body textarea, body select, body button, body label{ font-family:var(--rh-body) !important; }\nbody h1, body h2, body h3, body h4{ font-family:var(--rh-head) !important; font-weight:500 !important; }\nbody{ font-size:var(--fs-lede); line-height:var(--lh-body); }\nbody h1{ font-size:var(--fs-display); line-height:var(--lh-display); letter-spacing:var(--tr-display); }\nbody h2{ font-size:var(--fs-h1); line-height:var(--lh-h1); letter-spacing:var(--tr-h1); }\nbody h3{ font-size:var(--fs-h3); line-height:1.2; letter-spacing:var(--tr-h3); }\nbody h4{ font-size:var(--fs-h4); line-height:1.2; }\nbody p, body li, body td, body dd, body dt, body blockquote{ font-size:min(1em, var(--fs-lede)); }\nbody .form-btn{ font-size:var(--fs-sm); }\nbody .form-control{ font-size:var(--fs-body); }\nbody .form-label{ font-size:var(--fs-sm); }\nbody p[class~=\"text-sm\"], body li[class~=\"text-sm\"], body span[class~=\"text-sm\"], body div[class~=\"text-sm\"]{ font-size:var(--fs-body); }\nbody p[class~=\"text-xs\"], body li[class~=\"text-xs\"], body span[class~=\"text-xs\"], body div[class~=\"text-xs\"]{ font-size:var(--fs-xs); }\nbody#encore-theme #form-button, body#nova-theme #form-button{\n  border-radius:6px !important; font-size:var(--fs-sm) !important; font-weight:600 !important;\n  border-width:1px !important; padding-left:18px !important; padding-right:18px !important;\n  min-height:44px !important; height:44px !important; line-height:1 !important;\n}\nbody#nova-theme .nova-block-cta a{\n  border-radius:6px !important; font-size:var(--fs-sm) !important; font-weight:600 !important;\n  min-height:44px !important; height:44px !important; padding-left:18px !important; padding-right:18px !important;\n}\n@media (min-width:768px){\n  body#nova-theme main .max-w-7xl{\n    max-width:1320px !important; padding-left:30px !important; padding-right:30px !important;\n    margin-left:auto !important; margin-right:auto !important;\n  }\n}\nbody#nova-theme .nova-block-text p,\nbody#nova-theme .nova-block-text li,\nbody#nova-theme .nova-block-text blockquote{ max-width:68ch; }\n#block-rh_type{ display:none; }\n</style>",
+          "width": "fill",
+          "mobile_width": "fill"
+        }
+      }
+    },
+    "settings": {
+      "direction": "vertical", "align": "start", "position": "center", "gap": 0, "min_height": "auto", "full_width": true, "wrap": true,
+      "padding_desktop": {"top": 0, "right": 0, "bottom": 0, "left": 0},
+      "padding_mobile": {"top": 0, "right": 0, "bottom": 0, "left": 0}
+    }
+  },
+  "rhchrome_foot": {
+    "type": "section",
+    "name": "Site chrome — footer (ported from home)",
+    "block_order": ["rh_foot"],
+    "blocks": {
+      "rh_foot": {
+        "type": "code",
+        "name": "Footer",
+        "settings": {
+          "code": "<footer class=\"rh-foot\"><span>© 2026 Ron Davis · itsrondavis.com</span><nav class=\"rh-fnav\" aria-label=\"Footer\"><a href=\"/about\">About</a><a href=\"/partner\">Partner</a><a href=\"/gear\">Gear</a><a href=\"/resources\">Resources</a><a href=\"/blog\">Blog</a><a href=\"/privacy\">Privacy</a><a href=\"/terms\">Terms</a><a href=\"/disclaimer\">Disclaimer</a></nav></footer>",
+          "width": "fill",
+          "mobile_width": "fill"
+        }
+      }
+    },
+    "settings": {
+      "direction": "vertical", "align": "start", "position": "center", "gap": 0, "min_height": "auto", "full_width": true, "wrap": true,
+      "padding_desktop": {"top": 28, "right": 0, "bottom": 28, "left": 0},
+      "padding_mobile": {"top": 24, "right": 0, "bottom": 24, "left": 0}
+    }
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "title": "36 questions people ask about AI visibility",
+  "source": "Periodic Table of AI Visibility, edition 2026.2",
+  "parts": [
+    {
+      "part": 1,
+      "group": "Engines",
+      "questions": [
+        {
+          "q": "Why doesn't ChatGPT mention my company?",
+          "s": "Your buyer asked, got three names, and you weren't one of them. Each engine chooses differently, and you only know you're missing from the ones you checked."
+        },
+        {
+          "q": "Google's AI Overview shows my competitors, not me.",
+          "s": "The answer box took the click that used to be yours. Position one doesn't matter if the box above it names someone else."
+        },
+        {
+          "q": "How do I show up in Perplexity or Grok?",
+          "s": "Different engines read different things: Perplexity reads the open web, Grok reads live posts, Gemini reads inside Workspace. One fix doesn't cover all eight."
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "group": "Retrieval, part 1 — the gates",
+      "questions": [
+        {
+          "q": "Is my website blocked from ChatGPT?",
+          "s": "One line in robots.txt meant for scrapers can block the crawler that feeds the answer, and your analytics will never tell you."
+        },
+        {
+          "q": "How do I know if AI crawlers can even read my site?",
+          "s": "If there's no sitemap entry and nothing links to a page, no engine finds it. Existing is not the same as being found."
+        },
+        {
+          "q": "What is llms.txt and do I need it?",
+          "s": "It's a note taped to the front door for robots. Cheap to make; Google says it ignores it. Worth an hour, not a week."
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "group": "Retrieval, part 2 — the page itself",
+      "questions": [
+        {
+          "q": "Why does AI quote my competitor's page and not mine?",
+          "s": "Same claim, same product, theirs gets picked. Usually the page the engine could actually read: rendered on the server, question-shaped headings, each section standing on its own."
+        },
+        {
+          "q": "ChatGPT gives outdated information about my product.",
+          "s": "The old page won. Three copies with no canonical, or no honest updated date, and the engine picks the stale one."
+        },
+        {
+          "q": "My videos and screenshots never show up in AI answers.",
+          "s": "Because there are no words in them. A video with no transcript page and a chart whose alt text says 'chart.png' are blank to retrieval."
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "group": "Signals, part 1 — what the sentence says",
+      "questions": [
+        {
+          "q": "ChatGPT describes my product wrong.",
+          "s": "Your first line says 'we empower modern teams.' The model had to guess what you do, and it guessed from someone else's page."
+        },
+        {
+          "q": "AI won't repeat my claims or my numbers.",
+          "s": "'Fast onboarding' can't be quoted. 'Live in 4 days for teams under 50' can. No number, no source, no citation."
+        },
+        {
+          "q": "When someone asks AI to compare me to a competitor, I lose.",
+          "s": "Because you never wrote the comparison. The review site with ads did, and the engine cited them."
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "group": "Signals, part 2 — what the page offers",
+      "questions": [
+        {
+          "q": "AI lists my competitors with prices and leaves me out.",
+          "s": "'Contact us for pricing' removed you from every 'how much does it cost' answer. A starting price puts you back in."
+        },
+        {
+          "q": "AI answers questions about my product from a review site's FAQ instead of mine.",
+          "s": "Your support tickets already hold the real questions. Ten of them, answered in two sentences each, get lifted word for word."
+        },
+        {
+          "q": "When someone asks 'what is [my category]', AI defines it using a competitor.",
+          "s": "The definition line at the top of a page is the front door. If yours isn't there, theirs is."
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "group": "Artifacts, part 1 — evidence",
+      "questions": [
+        {
+          "q": "What kind of content actually gets cited by AI?",
+          "s": "Evidence, not opinion. A teardown, a benchmark, a dataset, a measured case study, a runbook. Most B2B sites have none."
+        },
+        {
+          "q": "Why don't my blog posts show up in AI answers?",
+          "s": "Fifty posts of opinion are fifty pages with nothing attributable. One benchmark with a method and a date beats all of them."
+        },
+        {
+          "q": "AI cites a competitor's study in my category.",
+          "s": "They published the number. You can publish yours: fifty samples, a stated method, a date. Small is fine."
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "group": "Artifacts, part 2 — tools and media",
+      "questions": [
+        {
+          "q": "Do videos help with AI visibility?",
+          "s": "Only with words attached. The video is the trust layer; the transcript is the retrieval layer. You need both."
+        },
+        {
+          "q": "AI never links to my tools or calculators.",
+          "s": "Because they're gated. The moment a calculator asks for an email, it stops being linked. Ungate the tool, gate the custom result."
+        },
+        {
+          "q": "Does a newsletter or a template help me get cited?",
+          "s": "They build the audience that later types your name into an engine. Recognition first, citation later."
+        }
+      ]
+    },
+    {
+      "part": 8,
+      "group": "Channels, part 1",
+      "questions": [
+        {
+          "q": "Does posting on LinkedIn help AI visibility?",
+          "s": "Almost nothing posted there gets cited. It's where you're seen, not where you're cited. Different job."
+        },
+        {
+          "q": "Why does AI cite Reddit over my own website?",
+          "s": "Because the discussion is real. One honest thread can outrank your whole site, and one sales pitch gets you banned."
+        },
+        {
+          "q": "Does YouTube or GitHub get cited by ChatGPT?",
+          "s": "YouTube is consistently among the most-cited domains, and a README on GitHub is a document on a trusted domain. Both read closely."
+        }
+      ]
+    },
+    {
+      "part": 9,
+      "group": "Channels, part 2",
+      "questions": [
+        {
+          "q": "Do G2 or Capterra reviews affect AI answers?",
+          "s": "'Best X tools' answers lean on review sites. An empty profile reads as an inactive vendor."
+        },
+        {
+          "q": "My AWS Marketplace listing doesn't show up in AI answers.",
+          "s": "Treated as a form it tells engines nothing. Treated as a landing page, with a definition, proof and a price, it gets cited for 'where can I buy X'."
+        },
+        {
+          "q": "Do guest posts and podcasts help with AI visibility?",
+          "s": "A transcript page on someone else's trusted domain is a citation you borrowed. No transcript, no retrieval value."
+        }
+      ]
+    },
+    {
+      "part": 10,
+      "group": "Measurement",
+      "questions": [
+        {
+          "q": "How do I track AI visibility?",
+          "s": "Thirty real buyer questions, frozen, asked monthly. Named in 6 of 30 is 20% share. That's the scoreboard."
+        },
+        {
+          "q": "How do I measure ChatGPT mentions of my brand?",
+          "s": "Mentions come before citations. Track named-but-unlinked separately; it's the first sign something started working."
+        },
+        {
+          "q": "AI search traffic isn't showing in my analytics.",
+          "s": "Many AI visits arrive as 'direct.' Segment the ones you can see; they're under 2% of traffic and the highest-intent cohort on the site."
+        }
+      ]
+    },
+    {
+      "part": 11,
+      "group": "Inhibitors, part 1 — access",
+      "questions": [
+        {
+          "q": "My site disappeared from ChatGPT.",
+          "s": "A 'block all bots' rule meant for scrapers blocked the crawlers that feed the answer. Months invisible, five-minute fix."
+        },
+        {
+          "q": "My pricing page shows up blank to AI.",
+          "s": "It's built in JavaScript. To most crawlers the page is a header and nothing else. View source and look for your main claim."
+        },
+        {
+          "q": "Does gated content hurt AI visibility?",
+          "s": "Your best proof behind an email form is invisible to every engine and most buyers. Ungate the proof; gate the tailored thing."
+        }
+      ]
+    },
+    {
+      "part": 12,
+      "group": "Inhibitors, part 2 — content",
+      "questions": [
+        {
+          "q": "Does duplicate content hurt AI search?",
+          "s": "The same article at three addresses splits authority three ways. None of them wins."
+        },
+        {
+          "q": "Does AI-generated content hurt AI visibility?",
+          "s": "Fifty thin posts buried the three good ones and taught the engines your name means noise. Deleting is faster than waiting."
+        },
+        {
+          "q": "Do pages without dates get cited?",
+          "s": "Undated reads as possibly stale, and stale gets skipped on anything time-sensitive. Old but dated beats new but undated."
+        }
+      ]
+    }
+  ]
+}
