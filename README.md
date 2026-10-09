@@ -1,5 +1,7 @@
 # Periodic Table of AI Visibility
 
+![Periodic Table of AI Visibility: 69 tiles in seven colour groups, ten of them outlined as inhibitors to remove](table/social-card.png)
+
 **The 69 things that decide whether ChatGPT, Perplexity, Claude, Gemini, Copilot, Grok, Google AI Overviews or AI Mode name your company — and the 10 to remove before you add anything.**
 
 By [Ron Davis](https://www.itsrondavis.com) · Edition 2026.2 · audited 2026-10-02 · Canonical page: **[itsrondavis.com/ai-visibility](https://www.itsrondavis.com/ai-visibility)** · Data: CC BY 4.0 · Skills: MIT
@@ -405,7 +407,9 @@ A README is a document on a trusted domain that engines read closely (**Gi GitHu
 | **Lt llms.txt** | [llms.txt](llms.txt) at the repo root, pointing at the definition, the data and the offer |
 | **Ga Gated** | Nothing here asks for an email |
 
-The blank squares on this page, said out loud: no **Sh Screenshot** of the wallchart yet, and no **Bn Benchmark** of how often each element is missing across real sites. Both are on the list.
+| **Sh Screenshot** | The wallchart card at the top, with alt text that says what it shows |
+
+The blank square on this page, said out loud: no **Bn Benchmark** of how often each element is missing across real sites. It is on the list.
 
 ## Changelog and audit history
 

@@ -30,7 +30,7 @@ const byGroup = (k) => D.elements.filter((e) => e.group_key === k);
 
 // ---------- README ----------
 let r = "";
-r += `# Periodic Table of AI Visibility\n\n`;
+r += `# Periodic Table of AI Visibility\n\n![Periodic Table of AI Visibility: 69 tiles in seven colour groups, ten of them outlined as inhibitors to remove](table/social-card.png)\n\n`;
 r += `**The 69 things that decide whether ChatGPT, Perplexity, Claude, Gemini, Copilot, Grok, Google AI Overviews or AI Mode name your company — and the 10 to remove before you add anything.**\n\n`;
 r += `By [Ron Davis](https://www.itsrondavis.com) · Edition ${D.edition} · audited ${D.audited} · Canonical page: **[${CANON.replace("https://www.", "")}](${CANON})** · Data: CC BY 4.0 · Skills: MIT\n\n`;
 r += `> **AI visibility** is whether an answer engine names your company when a buyer asks a category question. It covers four outcomes: **ranking** (your position in a list), **citation** (a linked source inside the answer), **mention** (named, no link) and **recognition** (the model knows you without looking anything up). Being listed is ranking. Being chosen is the other three.\n\n`;
@@ -125,7 +125,7 @@ r += `| **Ds Dataset** | elements.json and elements.csv at a stable URL with a l
 r += `| **Tp Template** | The eight skills are files you can use today |\n`;
 r += `| **Lt llms.txt** | [llms.txt](llms.txt) at the repo root, pointing at the definition, the data and the offer |\n`;
 r += `| **Ga Gated** | Nothing here asks for an email |\n\n`;
-r += `The blank squares on this page, said out loud: no **Sh Screenshot** of the wallchart yet, and no **Bn Benchmark** of how often each element is missing across real sites. Both are on the list.\n\n`;
+r += `| **Sh Screenshot** | The wallchart card at the top, with alt text that says what it shows |\n\nThe blank square on this page, said out loud: no **Bn Benchmark** of how often each element is missing across real sites. It is on the list.\n\n`;
 
 r += `## Changelog and audit history\n\n`;
 r += `- **${D.audited} — Edition ${D.edition}.** Engines row audited: Siri AI runs on Gemini since June 2026 and is covered by the Gemini tile; Meta AI, DeepSeek, Qwen, Ollama and Alexa+ were considered and left off, with the reasons recorded in the wallchart. llms.txt note updated for the v2 spec and Google's May 2026 guidance. Grok's in-car presence verified.\n`;
