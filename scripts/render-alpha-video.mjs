@@ -41,11 +41,11 @@ const rowsHtml = ROWS.map(([a, b]) => {
 }).join("");
 
 const html = `<!doctype html><meta charset="utf-8">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Mono:wght@500&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Inter:wght@800&family=IBM+Plex+Mono:wght@500&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap">
 <style>
 html,body{margin:0;width:${W}px;height:${H}px;background:transparent;overflow:hidden}
-.title{position:absolute;top:30px;left:50%;transform:translateX(-50%);padding:16px 34px;border-radius:12px;background:rgba(20,17,28,0.55);border:1px solid rgba(255,255,255,0.55);text-align:center;font-family:'Bricolage Grotesque',Arial,sans-serif;font-weight:800;font-size:50px;letter-spacing:-.03em;color:#fff;line-height:1;white-space:nowrap}
-.title em{font-family:'Newsreader',Georgia,serif;font-style:italic;font-weight:400;color:#C0A7FF}
+.title{position:absolute;top:30px;left:50%;transform:translateX(-50%);padding:16px 34px;border-radius:12px;background:rgba(20,17,28,0.55);border:1px solid rgba(255,255,255,0.55);text-align:center;font-family:'Inter',-apple-system,Arial,sans-serif;font-weight:800;font-size:50px;letter-spacing:-.025em;color:#fff;line-height:1;white-space:nowrap}
+.title em{font-family:'Newsreader',Georgia,serif;font-style:italic;font-weight:400;color:#E6A53C;font-size:56px}
 .wrap{position:absolute;left:0;right:0;top:112px;bottom:30px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:9px}
 .row{position:relative;display:flex;gap:9px}
 .lab{position:absolute;right:100%;top:50%;transform:translateY(-50%);margin-right:18px;font-style:normal;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.85);text-shadow:0 1px 2px rgba(0,0,0,.6);white-space:nowrap}
