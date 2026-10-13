@@ -1,180 +1,188 @@
 {
-  "_note": "itsrondavis.com home (landing page 2152082106, theme 2166393107) — the 2026-10-13 redo. Pass this object as `settings` to update_theme_content. Only the blocks listed here change; block `home_css` (the 10 KB home stylesheet) is untouched and the additions live in the new `redo_css` block. Revert with home-theme-backup-2026-10-13.json.",
-  "sections": {
-    "1758300000001": {
-      "type": "section",
-      "name": "Nav",
-      "block_order": [
-        "home_css",
-        "redo_css",
-        "nav_0"
-      ],
-      "blocks": {
-        "redo_css": {
-          "type": "code",
-          "settings": {
-            "width": "12",
-            "code": "<style>\n/* ── REDO 2026-10-13 · brand for what is delivered by hand. Own block so `home_css` stays byte-identical. Hero: two buttons instead of the opt-in form (the form stays in section 007). Section 003: three capability cards. Section 005: contact pills. ── */\n.rh-ctas{ display:flex; gap:12px; flex-wrap:wrap; margin:24px 0 0; }\n.rh-btn.rh-btn--lg{ height:44px !important; }\n.rh-btn.rh-btn--fill{ height:44px !important; border:0 !important; background:var(--rh-grad); color:#fff; }\n.rh-btn.rh-btn--fill:hover, .rh-btn.rh-btn--fill:focus-visible{ background:var(--rh-grad); color:#fff; filter:brightness(1.06); }\n.rh-hero-k{ display:block; font-size:var(--fs-sm); line-height:1.5; color:var(--rh-mut); margin:16px 0 0; max-width:560px; }\n.rh-hero-k a{ color:var(--rh-purple); font-weight:600; }\n#section-1758300000002 .row{ grid-template-rows:1fr auto 1fr; grid-template-areas:\". photo\" \"copy photo\" \". photo\"; }\n@media (max-width:767px){ #section-1758300000002 .row{ grid-template-rows:auto auto; grid-template-areas:\"copy\" \"photo\"; } .rh-ctas .rh-btn{ width:100%; } }\n.rh-thumb--cap{ aspect-ratio:16/7; }\n.rh-card .rh-card-m{ margin-top:auto; }\na.rh-stat{ display:block; color:var(--rh-ink); }\na.rh-stat .rh-l{ color:var(--rh-purple); font-weight:600; }\n.rh-foot a.rh-mail{ color:var(--rh-purple); font-weight:600; }\n</style>",
-            "make_flush": "true",
-            "make_block": "true",
-            "hide_on_desktop": "false",
-            "hide_on_mobile": "false"
-          }
-        },
-        "nav_0": {
-          "type": "text",
-          "settings": {
-            "text": "<div class=\"rh-nav\"><a class=\"rh-brand\" href=\"/\"><span class=\"rh-dot\"></span><span class=\"rh-stack\"><span class=\"rh-nm\">Ron Davis</span><span class=\"rh-tg\">AI Visibility &amp; Marketplace GTM</span></span></a><nav class=\"rh-links\" aria-label=\"Primary\"><a href=\"/ai-visibility\">The table</a><a href=\"/newsletter\">Read</a><a href=\"/podcast\">Watch</a><a href=\"/work-with-me\">Work with me</a><a href=\"/about\">About</a><a href=\"/partner\">Partner</a></nav><a class=\"rh-btn\" href=\"/book-a-call\">Book a free call</a></div>"
-          }
-        }
-      }
+ "_note": "itsrondavis.com home (landing page 2152082106, theme 2166393107) — the 2026-10-13 redo, v2. Pass this object as `settings` to update_theme_content. v1 (same day) is in git history; revert to the pre-redo page with home-theme-backup-2026-10-13.json. Block `home_css` is untouched; every addition lives in `redo_css`, `hero_video`, and section 1758300000008.",
+ "content_for_index": [
+  "1758300000001",
+  "1758300000002",
+  "1758300000008",
+  "1758300000007",
+  "1758300000003",
+  "1758300000004",
+  "1758300000005",
+  "1758300000006"
+ ],
+ "sections": {
+  "1758300000001": {
+   "type": "section",
+   "name": "Nav",
+   "block_order": [
+    "home_css",
+    "redo_css",
+    "nav_0"
+   ],
+   "blocks": {
+    "redo_css": {
+     "type": "code",
+     "settings": {
+      "width": "12",
+      "code": "<style>\n/* ── REDO 2026-10-13 (v2) · brand for what is delivered by hand. Own block so `home_css` stays byte-identical.\n   v2: every CTA solid #330582 (no gradients); hero photo replaced by a 16:9 video slot (block hero_video);\n   new section 008 'What you get' (value table + scorecard illustration); portrait moved to the receipts row. ── */\n.rh-ctas{ display:flex; gap:12px; flex-wrap:wrap; margin:24px 0 0; }\n.rh-btn.rh-btn--lg{ height:44px !important; }\n.rh-btn.rh-btn--fill{ height:44px !important; border:0 !important; background:var(--rh-purple); color:#fff; }\n.rh-btn.rh-btn--fill:hover, .rh-btn.rh-btn--fill:focus-visible{ background:#26046a; color:#fff; filter:none; }\n#section-1758300000007 #block-aiv_form .form-btn, #section-1758300000007 #block-aiv_form .form-btn.btn--solid{ background:var(--rh-purple) !important; }\n#section-1758300000007 #block-aiv_form .form-btn:hover, #section-1758300000007 #block-aiv_form .form-btn:focus-visible{ background:#26046a !important; filter:none; }\n.rh-hero-k{ display:block; font-size:var(--fs-sm); line-height:1.5; color:var(--rh-mut); margin:16px 0 0; max-width:560px; }\n.rh-hero-k a{ color:var(--rh-purple); font-weight:600; }\n/* hero grid: copy | video. The old 'form' row is gone. */\n#section-1758300000002 .row{ grid-template-rows:1fr auto 1fr; grid-template-areas:\". video\" \"copy video\" \". video\"; }\n#block-hero_video{ grid-area:video; align-self:center; }\n.rh-video{ position:relative; aspect-ratio:16/9; border-radius:6px; overflow:hidden; background:#16121f; }\n.rh-video iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; display:block; }\n.rh-video-btn{ all:unset; display:block; position:absolute; inset:0; cursor:pointer; }\n.rh-video-btn:focus-visible{ outline:3px solid var(--rh-accent); outline-offset:-3px; }\n.rh-video-poster{ width:100%; height:100%; object-fit:cover; object-position:50% 30%; display:block; }\n.rh-video-play{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:64px; height:64px; border-radius:50%; background:#fff; color:var(--rh-purple); display:flex; align-items:center; justify-content:center; box-shadow:0 8px 24px rgba(22,18,31,.28); transition:transform 140ms ease; }\n.rh-video-btn:hover .rh-video-play{ transform:translate(-50%,-50%) scale(1.06); }\n.rh-video-play svg{ width:24px; height:24px; margin-left:3px; }\n.rh-video-under{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-top:10px; font-size:var(--fs-sm); line-height:1.45; color:var(--rh-mut); }\n.rh-video-under .rh-k{ margin-bottom:3px; }\n.rh-video-under a{ color:var(--rh-purple); font-weight:600; white-space:nowrap; }\n@media (max-width:767px){ #section-1758300000002 .row{ grid-template-rows:auto auto; grid-template-areas:\"copy\" \"video\"; } #block-hero_video{ margin-top:28px !important; } .rh-ctas .rh-btn{ width:100%; } }\n/* section 003 cards */\n.rh-thumb--cap{ aspect-ratio:16/7; }\n.rh-card .rh-card-m{ margin-top:auto; }\n/* receipts: portrait first, then the three numbers, then the pills */\n#section-1758300000005 .row{ grid-template-columns:auto 1fr 1fr 1fr auto; }\n.rh-guide{ display:flex; align-items:center; gap:14px; padding-right:12px; }\n.rh-guide img{ width:84px; height:84px; border-radius:50%; object-fit:cover; object-position:50% 20%; display:block; border:1px solid var(--rh-line); }\n.rh-guide-n{ display:block; font-family:var(--rh-head); font-weight:500; font-size:var(--fs-h3); line-height:1.1; color:var(--rh-ink); margin-top:4px; }\na.rh-stat{ display:block; color:var(--rh-ink); }\na.rh-stat .rh-l{ color:var(--rh-purple); font-weight:600; }\n@media (max-width:767px){ #section-1758300000005 .row{ grid-template-columns:1fr 1fr; } #block-rec_photo{ grid-column:1 / -1; } }\n.rh-foot a.rh-mail{ color:var(--rh-purple); font-weight:600; }\n</style>",
+      "make_flush": "true",
+      "make_block": "true",
+      "hide_on_desktop": "false",
+      "hide_on_mobile": "false"
+     }
     },
-    "1758300000002": {
-      "type": "section",
-      "name": "Hero",
-      "block_order": [
-        "hero_copy",
-        "hero_photo",
-        "hero_pill"
-      ],
-      "blocks": {
-        "hero_copy": {
-          "type": "text",
-          "settings": {
-            "text": "<div class=\"rh-hero-copy\"><span class=\"rh-eye\">Eight years inside AWS Marketplace · 3× AWS certified</span><h1>Get named when your buyer asks an AI who to pick.</h1><p class=\"rh-lede\">I audit your website and your marketplace listing the way ChatGPT, Perplexity, Claude and Gemini read them, then hand you the fixes in the order to do them. A written audit, a $99 kit, or a free 30-minute call. Nothing to install, no account to create.</p><div class=\"rh-ctas\"><a class=\"rh-btn rh-btn--fill\" href=\"/book-a-call\">Book a free 30-minute call</a><a class=\"rh-btn rh-btn--lg\" href=\"/ai-visibility\">Open the periodic table</a></div><span class=\"rh-hero-k\">Prefer email? Write to <a href=\"mailto:ron@vell.ai\">ron@vell.ai</a>. You get a plain reply from me, usually inside two business days.</span></div>"
-          }
-        }
-      }
-    },
-    "1758300000007": {
-      "type": "section",
-      "blocks": {
-        "aiv_head": {
-          "type": "text",
-          "settings": {
-            "text": "<div class=\"rh-shead\"><div><span id=\"teardown\" class=\"rh-anchor\"></span><span class=\"rh-eye\">Free · wallchart, data and eight skills</span><h2>The Periodic Table of AI Visibility</h2></div><a class=\"rh-more\" href=\"/ai-visibility\">Open the wallchart →</a></div>"
-          }
-        }
-      }
-    },
-    "1758300000003": {
-      "type": "section",
-      "name": "Delivered by hand",
-      "block_order": [
-        "week_head",
-        "week_1",
-        "week_2",
-        "week_3"
-      ],
-      "blocks": {
-        "week_head": {
-          "type": "text",
-          "settings": {
-            "text": "<div class=\"rh-shead\"><div><span class=\"rh-eye\">What you actually get</span><h2>Delivered in writing, by a person. No dashboard, no login.</h2></div><a class=\"rh-more\" href=\"/work-with-me\">Every way in →</a></div>"
-          }
-        },
-        "week_1": {
-          "type": "text",
-          "settings": {
-            "text": "<a class=\"rh-card\" href=\"/discovery-kit\"><span class=\"rh-thumb rh-thumb--tile rh-thumb--cap\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 3h9l4 4v14H6z\"/><path d=\"M15 3v4h4M9 12h7M9 16h7\"/></svg></span><span class=\"rh-k\">Written audit · 10 business days</span><span class=\"rh-card-t\">Your page or your listing, read the way the buyer's AI reads it.</span><span class=\"rh-card-d\">All 69 elements scored, the blank squares named, and the fixes in the order to do them. You get a document you can hand to whoever ships it.</span><span class=\"rh-card-m\">The Second Buyer Audit · $2,500 →</span></a>"
-          }
-        },
-        "week_2": {
-          "type": "text",
-          "settings": {
-            "text": "<a class=\"rh-card\" href=\"/work-with-me\"><span class=\"rh-thumb rh-thumb--tile rh-thumb--nl rh-thumb--cap\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 4H7a2 2 0 0 0-2 2v4l-2 2 2 2v4a2 2 0 0 0 2 2h1M16 4h1a2 2 0 0 1 2 2v4l2 2-2 2v4a2 2 0 0 1-2 2h-1\"/></svg></span><span class=\"rh-k\">Files and sentences · done for you</span><span class=\"rh-card-t\">llms.txt, agents.txt, JSON-LD and the sentences worth quoting.</span><span class=\"rh-card-d\">The machine-readable layer written from your facts, plus your first line, pricing line and definition rewritten so an engine can lift them whole.</span><span class=\"rh-card-m\">Inside the sprint and the audit →</span></a>"
-          }
-        },
-        "week_3": {
-          "type": "text",
-          "settings": {
-            "text": "<a class=\"rh-card\" href=\"/fractional-cmo\"><span class=\"rh-thumb rh-thumb--tile rh-thumb--cap\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 20h16M6 16l4-5 4 3 5-7\"/></svg></span><span class=\"rh-k\">Prompt set and scoreboard · monthly</span><span class=\"rh-card-t\">Thirty frozen buyer questions, run every month, with the numbers that moved.</span><span class=\"rh-card-d\">Ranking, citation, mention and recognition across ChatGPT, Perplexity, Claude, Gemini, Copilot and Google, with a unit and a direction on every line.</span><span class=\"rh-card-m\">Part of the fractional position →</span></a>"
-          }
-        }
-      }
-    },
-    "1758300000004": {
-      "type": "section",
-      "name": "Work band",
-      "block_order": [
-        "work_head",
-        "work_1",
-        "work_2",
-        "work_3",
-        "work_4"
-      ],
-      "blocks": {
-        "work_head": {
-          "type": "text",
-          "settings": {
-            "text": "<span class=\"rh-eye rh-eye--light\">Four ways to buy</span>"
-          }
-        },
-        "work_1": {
-          "type": "text",
-          "settings": {
-            "text": "<a class=\"rh-work\" href=\"/offers/FudyCMoT/checkout\"><span class=\"rh-work-t\">The AI Visibility Audit Kit</span><span class=\"rh-work-m\">Scorecard, prompt tracker, file templates, runbook · $99</span></a>"
-          }
-        },
-        "work_2": {
-          "type": "text",
-          "settings": {
-            "text": "<a class=\"rh-work\" href=\"/discovery-kit\"><span class=\"rh-work-t\">The Second Buyer Audit</span><span class=\"rh-work-m\">Written audit, 10 days · $2,500</span></a>"
-          }
-        },
-        "work_3": {
-          "type": "text",
-          "settings": {
-            "text": "<a class=\"rh-work\" href=\"/coaching\"><span class=\"rh-work-t\">Listed to Chosen</span><span class=\"rh-work-m\">8 weeks, 6 shipped assets · $12,500</span></a>"
-          }
-        },
-        "work_4": {
-          "type": "text",
-          "settings": {
-            "text": "<a class=\"rh-work\" href=\"/fractional-cmo\"><span class=\"rh-work-t\">Fractional Marketplace Lead</span><span class=\"rh-work-m\">Monthly position · $7,500/mo</span></a>"
-          }
-        }
-      }
-    },
-    "1758300000005": {
-      "type": "section",
-      "name": "Receipts",
-      "block_order": [
-        "rec_1",
-        "rec_2",
-        "rec_3",
-        "rec_pills"
-      ],
-      "blocks": {
-        "rec_2": {
-          "type": "text",
-          "settings": {
-            "text": "<a class=\"rh-stat\" href=\"/offers/23mNyU7f/checkout?coupon=FOUNDING47\"><span class=\"rh-n\">596</span><span class=\"rh-l\">listings read the way a machine reads · the benchmark, $47 →</span></a>"
-          }
-        },
-        "rec_pills": {
-          "type": "text",
-          "settings": {
-            "text": "<div class=\"rh-pills\"><a class=\"rh-pill-btn\" href=\"mailto:ron@vell.ai\">Email ron@vell.ai</a><a class=\"rh-pill-btn\" href=\"/book-a-call\">Book a free call</a></div>"
-          }
-        }
-      }
-    },
-    "1758300000006": {
-      "type": "section",
-      "name": "Footer",
-      "blocks": {
-        "foot_0": {
-          "type": "text",
-          "settings": {
-            "text": "<footer class=\"rh-foot\"><span>© 2026 Ron Davis · itsrondavis.com · <a class=\"rh-mail\" href=\"mailto:ron@vell.ai\">ron@vell.ai</a></span><nav class=\"rh-fnav\" aria-label=\"Footer\"><a href=\"/about\">About</a><a href=\"/contact\">Contact</a><a href=\"/partner\">Partner</a><a href=\"/resources\">Resources</a><a href=\"/blog\">Blog</a><a href=\"/privacy\">Privacy</a><a href=\"/terms\">Terms</a><a href=\"/disclaimer\">Disclaimer</a></nav></footer>"
-          }
-        }
-      }
+    "nav_0": {
+     "type": "text",
+     "settings": {
+      "text": "<div class=\"rh-nav\"><a class=\"rh-brand\" href=\"/\"><span class=\"rh-dot\"></span><span class=\"rh-stack\"><span class=\"rh-nm\">Ron Davis</span><span class=\"rh-tg\">AI Visibility &amp; Marketplace GTM</span></span></a><nav class=\"rh-links\" aria-label=\"Primary\"><a href=\"/ai-visibility\">The table</a><a href=\"/newsletter\">Read</a><a href=\"/podcast\">Watch</a><a href=\"/work-with-me\">Work with me</a><a href=\"/about\">About</a><a href=\"/partner\">Partner</a></nav><a class=\"rh-btn\" href=\"/book-a-call\">Book a free call</a></div>"
+     }
     }
+   }
   },
-  "landing_page_seo": {
-    "page_title": "Ron Davis — AI Visibility & AWS Marketplace GTM | Written audits",
-    "page_description": "Ron Davis audits websites and AWS Marketplace listings the way ChatGPT, Perplexity, Claude and Gemini read them, then delivers the fixes in order: a written audit ($2,500), the $99 AI Visibility Audit Kit, an 8-week sprint, or a fractional lead. Free 30-minute call, or email ron@vell.ai."
+  "1758300000002": {
+   "type": "section",
+   "name": "Hero",
+   "block_order": [
+    "hero_copy",
+    "hero_video"
+   ],
+   "blocks": {
+    "hero_copy": {
+     "type": "text",
+     "settings": {
+      "text": "<div class=\"rh-hero-copy\"><span class=\"rh-eye\">Eight years inside AWS Marketplace · 3× AWS certified</span><h1>Get named when your buyer asks AI who to pick.</h1><p class=\"rh-lede\">I audit your website and your marketplace listing the way ChatGPT, Perplexity, Claude and Gemini read them, then hand you the fixes in the order to do them. A written audit, a $99 kit, or a free 30-minute call. Nothing to install, no account to create.</p><div class=\"rh-ctas\"><a class=\"rh-btn rh-btn--fill\" href=\"/book-a-call\">Book a free 30-minute call</a><a class=\"rh-btn rh-btn--lg\" href=\"/ai-visibility\">Open the periodic table</a></div><span class=\"rh-hero-k\">Prefer email? Write to <a href=\"mailto:ron@vell.ai\">ron@vell.ai</a>. You get a plain reply from me, usually inside two business days.</span></div>"
+     }
+    },
+    "hero_video": {
+     "type": "code",
+     "settings": {
+      "width": "12",
+      "code": "<!-- HERO VIDEO · 16:9 · To swap the video: change data-yt (the YouTube ID) and the title text in the three places marked TITLE, the duration, and the JSON-LD block. While the video is private the poster falls back to the Ron photo. -->\n<div class=\"rh-video\" id=\"rh-hero-video\" data-yt=\"Y9Az3O3UYTc\" data-title=\"Does AI read newsletters? Five things AI loves to quote on your website\"><button class=\"rh-video-btn\" type=\"button\" aria-label=\"Play: Does AI read newsletters? Five things AI loves to quote on your website\"><img class=\"rh-video-poster\" src=\"https://i.ytimg.com/vi/Y9Az3O3UYTc/maxresdefault.jpg\" alt=\"Ron Davis on camera. TITLE: Does AI read newsletters? Five things AI loves to quote on your website\" width=\"1280\" height=\"720\" fetchpriority=\"high\" onload=\"if(this.naturalWidth&lt;640){this.onload=null;this.src='https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148151648/images/f67bd83-bc2-02ed-afb4-3bfd64fb8b64_ron-hero-1600.jpg';}\" onerror=\"this.onerror=null;this.src='https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148151648/images/f67bd83-bc2-02ed-afb4-3bfd64fb8b64_ron-hero-1600.jpg';\"><span class=\"rh-video-play\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M8 5v14l11-7z\"/></svg></span></button></div>\n<div class=\"rh-video-under\"><span><span class=\"rh-k\">Latest · 12 min</span>Does AI read newsletters? Five things AI loves to quote on your website.</span><a href=\"https://www.youtube.com/watch?v=Y9Az3O3UYTc\" target=\"_blank\" rel=\"noopener\">Watch on YouTube →</a></div>\n<script>(function(){var v=document.getElementById(\"rh-hero-video\");if(!v)return;var b=v.querySelector(\".rh-video-btn\");if(!b)return;b.addEventListener(\"click\",function(){var id=v.getAttribute(\"data-yt\");var f=document.createElement(\"iframe\");f.src=\"https://www.youtube-nocookie.com/embed/\"+id+\"?autoplay=1&rel=0&modestbranding=1\";f.title=v.getAttribute(\"data-title\")||\"Video\";f.allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\";f.setAttribute(\"allowfullscreen\",\"\");f.setAttribute(\"loading\",\"eager\");v.innerHTML=\"\";v.appendChild(f);});})();</script>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"VideoObject\",\"@id\":\"https://www.itsrondavis.com/#hero-video\",\"name\":\"Does AI read newsletters? Five things AI loves to quote on your website\",\"description\":\"Ron Davis on the five page elements AI assistants quote most often, and how to check whether your own site carries them.\",\"thumbnailUrl\":[\"https://i.ytimg.com/vi/Y9Az3O3UYTc/maxresdefault.jpg\"],\"uploadDate\":\"2026-10-13\",\"duration\":\"PT12M47S\",\"contentUrl\":\"https://www.youtube.com/watch?v=Y9Az3O3UYTc\",\"embedUrl\":\"https://www.youtube-nocookie.com/embed/Y9Az3O3UYTc\",\"inLanguage\":\"en\",\"author\":{\"@id\":\"https://www.itsrondavis.com/#ron\"},\"publisher\":{\"@id\":\"https://www.itsrondavis.com/#ron\"}},{\"@type\":\"Person\",\"@id\":\"https://www.itsrondavis.com/#ron\",\"name\":\"Ron Davis\",\"url\":\"https://www.itsrondavis.com/\",\"email\":\"mailto:ron@vell.ai\",\"image\":\"https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148151648/images/a95aae9bd9fc16d6656905e6460aa04e.jpg\",\"jobTitle\":\"AI visibility and AWS Marketplace GTM advisor\",\"description\":\"Eight years inside AWS Marketplace. Audits websites and marketplace listings the way ChatGPT, Perplexity, Claude and Gemini read them, and delivers the fixes in writing.\",\"knowsAbout\":[\"AI visibility\",\"AWS Marketplace\",\"answer engine optimization\",\"llms.txt\",\"JSON-LD\"],\"sameAs\":[\"https://www.linkedin.com/in/itsrondavis/\",\"https://www.youtube.com/@itsRonDavis\",\"https://www.instagram.com/itsrondavis/\",\"https://github.com/vell-admin/ai-visibility-table\"]},{\"@type\":\"WebSite\",\"@id\":\"https://www.itsrondavis.com/#site\",\"url\":\"https://www.itsrondavis.com/\",\"name\":\"Ron Davis\",\"publisher\":{\"@id\":\"https://www.itsrondavis.com/#ron\"}}]}</script>",
+      "make_flush": "true",
+      "make_block": "false",
+      "hide_on_desktop": "false",
+      "hide_on_mobile": "false"
+     }
+    }
+   }
+  },
+  "1758300000008": {
+   "type": "section",
+   "name": "What you get",
+   "settings": {
+    "bg_type": "none",
+    "bg_image": "",
+    "bg_video": "",
+    "bg_position": "center",
+    "background_fixed": "false",
+    "background_color": "",
+    "full_width": "false",
+    "full_height": "false",
+    "equal_height": "false",
+    "vertical": "top",
+    "horizontal": "left",
+    "hide_on_desktop": "false",
+    "hide_on_mobile": "false",
+    "padding_desktop": {
+     "top": "8",
+     "right": "24",
+     "bottom": "64",
+     "left": "24"
+    },
+    "padding_mobile": {
+     "top": "4",
+     "right": "20",
+     "bottom": "44",
+     "left": "20"
+    },
+    "reveal_event": "",
+    "reveal_offset": "",
+    "reveal_units": "seconds"
+   },
+   "block_order": [
+    "wyg_css",
+    "wyg"
+   ],
+   "blocks": {
+    "wyg_css": {
+     "type": "code",
+     "settings": {
+      "width": "12",
+      "code": "<style>\n/* ── 008 · What you get (2026-10-13) — value table on the left, scorecard illustration on the right. All rules scoped to #section-1758300000008. ── */\n#section-1758300000008 .sizer .container{ max-width:1266px; }\n#section-1758300000008 .row > [class*=\"col-\"]{ padding:0; }\n#section-1758300000008 h2{ font-family:var(--rh-head); font-weight:500; font-size:var(--fs-h1); line-height:var(--lh-h1); letter-spacing:var(--tr-h1); color:var(--rh-ink); margin:0; text-wrap:balance; }\n.rh-wyg{ display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1fr); gap:48px; align-items:start; }\n.rh-wyg-lede{ font-size:var(--fs-body); line-height:var(--lh-body); color:var(--rh-mut); margin:14px 0 22px; max-width:560px; }\ntable.rh-val{ width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--rh-line); border-radius:6px; overflow:hidden; }\n.rh-val th, .rh-val td{ text-align:left; vertical-align:top; padding:12px 16px; border-top:1px solid var(--rh-line); font-size:var(--fs-sm); line-height:1.45; color:var(--rh-ink); }\n.rh-val th{ border-top:0; font-family:var(--rh-mono); font-size:var(--fs-micro); letter-spacing:.14em; text-transform:uppercase; color:var(--rh-mut); background:var(--rh-ground); }\n.rh-val td:first-child{ width:52%; }\n.rh-val td b{ display:block; font-weight:600; }\n.rh-val td span{ display:block; color:var(--rh-mut); margin-top:2px; }\n.rh-val td:last-child{ color:var(--rh-mut); }\n.rh-val tfoot td{ background:var(--rh-ground); }\n.rh-val tr.total td{ background:#16121f; color:#fff; border-top:0; }\n.rh-val tr.total td span{ color:#c6bfd6; }\n.rh-val tr.total td:last-child{ text-align:right; }\n.rh-val-price{ font-family:var(--rh-head); font-weight:500; font-size:var(--fs-h2); line-height:1; color:#fff !important; display:inline-block !important; margin:0 !important; }\n.rh-val a{ color:var(--rh-purple); font-weight:600; }\n#section-1758300000008 .rh-ctas{ margin-top:18px; }\n.rh-wyg-fig{ margin:0; }\n.rh-wyg-fig .rh-slot{ aspect-ratio:16/9; border-radius:6px; overflow:hidden; background:#fff; border:1px solid var(--rh-line); }\n.rh-wyg-fig figcaption{ font-size:var(--fs-sm); line-height:1.45; color:var(--rh-mut); margin-top:10px; }\n.rh-sc{ height:100%; box-sizing:border-box; padding:16px 18px; display:flex; flex-direction:column; gap:8px; font-size:var(--fs-sm); }\n.rh-sc-head{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px; }\n.rh-sc-score{ font-family:var(--rh-head); font-weight:500; font-size:var(--fs-h2); line-height:1; color:var(--rh-ink); }\n.rh-sc-score small{ font-family:var(--rh-body); font-size:var(--fs-xs); color:var(--rh-mut); margin-left:4px; }\n.rh-sc-row{ display:grid; grid-template-columns:96px 1fr; align-items:center; gap:10px; }\n.rh-sc-row > span{ font-family:var(--rh-mono); font-size:var(--fs-micro); letter-spacing:.08em; text-transform:uppercase; color:var(--rh-mut); }\n.rh-sc-row > div{ display:flex; gap:4px; flex-wrap:wrap; }\n.rh-sc-row i{ display:block; width:18px; height:18px; border-radius:3px; }\n.rh-sc-row i.b{ background:transparent; border:1.5px dashed rgba(22,18,31,.3); box-sizing:border-box; }\n.rh-sc-row i.x{ background:transparent; border:1.5px solid #8a8199; box-sizing:border-box; }\n.rh-sc-row i.x.r{ border-color:#b3261e; background:rgba(179,38,30,.08); }\n.rh-sc-fix{ margin-top:auto; padding-top:10px; border-top:1px solid var(--rh-line); }\n.rh-sc-fix ol{ margin:6px 0 0; padding:0; list-style:none; display:flex; gap:14px; flex-wrap:wrap; }\n.rh-sc-fix li{ display:flex; align-items:center; gap:6px; }\n.rh-sc-fix li b{ font-family:var(--rh-mono); font-size:var(--fs-micro); font-weight:600; padding:2px 6px; border-radius:4px; background:var(--rh-ground); border:1px solid var(--rh-line); }\n.rh-sc-fix li em{ font-style:normal; font-family:var(--rh-mono); font-size:var(--fs-micro); color:var(--rh-purple); }\n@media (max-width:900px){ .rh-wyg{ grid-template-columns:1fr; gap:28px; } .rh-sc-row{ grid-template-columns:80px 1fr; } .rh-sc-row i{ width:14px; height:14px; } }\n@media (max-width:767px){ #section-1758300000008 .rh-ctas .rh-btn{ width:100%; } .rh-val td:first-child{ width:58%; } .rh-wyg-fig .rh-slot{ aspect-ratio:auto; } }\n</style>",
+      "make_flush": "true",
+      "make_block": "true",
+      "hide_on_desktop": "false",
+      "hide_on_mobile": "false"
+     }
+    },
+    "wyg": {
+     "type": "code",
+     "settings": {
+      "width": "12",
+      "code": "<div class=\"rh-wyg\"><div class=\"rh-wyg-copy\"><span class=\"rh-eye\">What you get</span><h2>The instrument, not a lesson.</h2><p class=\"rh-wyg-lede\">Every row below is a file you open the same day. The free row sits on GitHub with no email wall. The kit is the same 69 elements I score by hand in the audit, packaged so you can run them yourself.</p><table class=\"rh-val\"><thead><tr><th>In the AI Visibility Audit Kit</th><th>What it stands in for</th></tr></thead><tbody><tr><td><b>Scorecard workbook</b><span>All 69 elements, your blank squares ranked by time to effect</span></td><td>The scoring pass of the $2,500 audit, run by you</td></tr><tr><td><b>Prompt-set tracker</b><span>30 frozen buyer questions, a unit and a direction on every number</span></td><td>The monthly scoreboard from the fractional position</td></tr><tr><td><b>Fill-in templates</b><span>llms.txt, agents.txt and JSON-LD, written from your facts</span></td><td>The three files the retrieval row asks for</td></tr><tr><td><b>Weekend inhibitor runbook</b><span>The ten things to remove before you add anything</span></td><td>Week one of the sprint, done in a weekend</td></tr></tbody><tfoot><tr class=\"free\"><td><b>Free, no email</b><span>The wallchart, elements.json and .csv, the 36 questions, the eight skills</span></td><td>$0 · <a href=\"https://github.com/vell-admin/ai-visibility-table\" target=\"_blank\" rel=\"noopener\">on GitHub</a></td></tr><tr class=\"total\"><td><b>The AI Visibility Audit Kit</b><span>One-time. Files you keep.</span></td><td><span class=\"rh-val-price\">$99</span></td></tr></tfoot></table><div class=\"rh-ctas\"><a class=\"rh-btn rh-btn--fill\" href=\"/offers/FudyCMoT/checkout\">Get the kit, $99</a><a class=\"rh-btn rh-btn--lg\" href=\"/discovery-kit\">Have me run it, $2,500</a></div></div><figure class=\"rh-wyg-fig\"><div class=\"rh-slot\"><div class=\"rh-sc\" aria-hidden=\"true\"><div class=\"rh-sc-head\"><span class=\"rh-k\">Scorecard · your page</span><span class=\"rh-sc-score\">41 <small>of 69 filled</small></span></div><div class=\"rh-sc-row\"><span>Engines</span><div><i style=\"background:#B7A8FF\"></i><i style=\"background:#B7A8FF\"></i><i style=\"background:#B7A8FF\"></i><i style=\"background:#B7A8FF\"></i><i class=\"b\"></i><i style=\"background:#B7A8FF\"></i><i style=\"background:#B7A8FF\"></i><i class=\"b\"></i></div></div><div class=\"rh-sc-row\"><span>Retrieval</span><div><i style=\"background:#7FDDD6\"></i><i class=\"b\"></i><i style=\"background:#7FDDD6\"></i><i class=\"b\"></i><i style=\"background:#7FDDD6\"></i><i style=\"background:#7FDDD6\"></i><i class=\"b\"></i><i style=\"background:#7FDDD6\"></i><i style=\"background:#7FDDD6\"></i><i style=\"background:#7FDDD6\"></i><i class=\"b\"></i><i style=\"background:#7FDDD6\"></i><i style=\"background:#7FDDD6\"></i><i style=\"background:#7FDDD6\"></i></div></div><div class=\"rh-sc-row\"><span>Signals</span><div><i style=\"background:#FFCE7A\"></i><i style=\"background:#FFCE7A\"></i><i class=\"b\"></i><i style=\"background:#FFCE7A\"></i><i style=\"background:#FFCE7A\"></i><i style=\"background:#FFCE7A\"></i><i class=\"b\"></i><i style=\"background:#FFCE7A\"></i><i style=\"background:#FFCE7A\"></i></div></div><div class=\"rh-sc-row\"><span>Artifacts</span><div><i style=\"background:#FF9FB3\"></i><i class=\"b\"></i><i class=\"b\"></i><i style=\"background:#FF9FB3\"></i><i class=\"b\"></i><i style=\"background:#FF9FB3\"></i><i class=\"b\"></i><i class=\"b\"></i><i style=\"background:#FF9FB3\"></i><i class=\"b\"></i></div></div><div class=\"rh-sc-row\"><span>Channels</span><div><i style=\"background:#8FE3A9\"></i><i style=\"background:#8FE3A9\"></i><i class=\"b\"></i><i style=\"background:#8FE3A9\"></i><i style=\"background:#8FE3A9\"></i><i class=\"b\"></i><i style=\"background:#8FE3A9\"></i><i style=\"background:#8FE3A9\"></i><i class=\"b\"></i><i style=\"background:#8FE3A9\"></i></div></div><div class=\"rh-sc-row\"><span>Measurement</span><div><i class=\"b\"></i><i style=\"background:#8FC3FF\"></i><i class=\"b\"></i><i class=\"b\"></i><i style=\"background:#8FC3FF\"></i><i class=\"b\"></i><i class=\"b\"></i><i style=\"background:#8FC3FF\"></i></div></div><div class=\"rh-sc-row rh-sc-row--x\"><span>Inhibitors</span><div><i class=\"x\"></i><i class=\"x r\"></i><i class=\"x\"></i><i class=\"x\"></i><i class=\"x r\"></i><i class=\"x\"></i><i class=\"x\"></i><i class=\"x r\"></i><i class=\"x\"></i><i class=\"x\"></i></div></div><div class=\"rh-sc-fix\"><span class=\"rh-k\">Fix first, by time to effect</span><ol><li><b>Rb</b> robots.txt <em>d</em></li><li><b>Lt</b> llms.txt <em>d</em></li><li><b>Ga</b> Gated content <em>remove</em></li></ol></div></div></div><figcaption>How the workbook reads once your page is in it: filled squares are elements you have, outlined squares are blank, and the fix list is sorted by time to effect. Illustration, not a real score.</figcaption></figure></div>",
+      "make_flush": "true",
+      "make_block": "true",
+      "hide_on_desktop": "false",
+      "hide_on_mobile": "false"
+     }
+    }
+   }
+  },
+  "1758300000007": {
+   "type": "section",
+   "blocks": {
+    "aiv_head": {
+     "type": "text",
+     "settings": {
+      "text": "<div class=\"rh-shead\"><div><span id=\"teardown\" class=\"rh-anchor\"></span><span class=\"rh-eye\">Free · wallchart, data and eight skills</span><h2>The Periodic Table of AI Visibility</h2></div><a class=\"rh-more\" href=\"/ai-visibility\">Open the wallchart →</a></div>"
+     }
+    }
+   }
+  },
+  "1758300000005": {
+   "type": "section",
+   "name": "Receipts",
+   "block_order": [
+    "rec_photo",
+    "rec_1",
+    "rec_2",
+    "rec_3",
+    "rec_pills"
+   ],
+   "blocks": {
+    "rec_photo": {
+     "type": "text",
+     "settings": {
+      "width": "2",
+      "text": "<div class=\"rh-guide\"><img src=\"https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148151648/images/a95aae9bd9fc16d6656905e6460aa04e.jpg\" alt=\"Ron Davis\" width=\"84\" height=\"84\" loading=\"lazy\"><span><span class=\"rh-k\">Your guide</span><span class=\"rh-guide-n\">Ron Davis</span></span></div>",
+      "make_flush": "true",
+      "make_block": "false",
+      "text_align": "left",
+      "mobile_text_align": "left",
+      "use_btn": "false",
+      "drop_cap": "false",
+      "new_tab": "false",
+      "hide_on_desktop": "false",
+      "hide_on_mobile": "false"
+     }
+    },
+    "rec_2": {
+     "type": "text",
+     "settings": {
+      "text": "<a class=\"rh-stat\" href=\"/offers/23mNyU7f/checkout?coupon=FOUNDING47\"><span class=\"rh-n\">596</span><span class=\"rh-l\">listings read the way a machine reads · the benchmark, $47 →</span></a>"
+     }
+    },
+    "rec_pills": {
+     "type": "text",
+     "settings": {
+      "text": "<div class=\"rh-pills\"><a class=\"rh-pill-btn\" href=\"mailto:ron@vell.ai\">Email ron@vell.ai</a><a class=\"rh-pill-btn\" href=\"/book-a-call\">Book a free call</a></div>"
+     }
+    }
+   }
   }
+ },
+ "landing_page_seo": {
+  "page_title": "Ron Davis — AI Visibility & AWS Marketplace GTM | Written audits",
+  "page_description": "Ron Davis audits websites and AWS Marketplace listings the way ChatGPT, Perplexity, Claude and Gemini read them, then delivers the fixes in order: a written audit ($2,500), the $99 AI Visibility Audit Kit, an 8-week sprint, or a fractional lead. Free 30-minute call, or email ron@vell.ai."
+ }
 }
