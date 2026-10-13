@@ -2,7 +2,11 @@
   "rhchrome_nav": {
     "type": "section",
     "name": "Site chrome — nav (ported from home)",
-    "block_order": ["rh_css", "rh_nav", "rh_type"],
+    "block_order": [
+      "rh_css",
+      "rh_nav",
+      "rh_type"
+    ],
     "blocks": {
       "rh_css": {
         "type": "code",
@@ -17,7 +21,7 @@
         "type": "code",
         "name": "Nav",
         "settings": {
-          "code": "<div class=\"rh-nav\"><a class=\"rh-brand\" href=\"/\"><span class=\"rh-dot\"></span><span class=\"rh-stack\"><span class=\"rh-nm\">Ron Davis</span><span class=\"rh-tg\">Marketplace &amp; AI Visibility GTM</span></span></a><nav class=\"rh-links\" aria-label=\"Primary\"><a href=\"/podcast\">Watch</a><a href=\"/newsletter\">Read</a><a href=\"/work-with-me\">Work with me</a><a href=\"/about\">About</a><a href=\"/partner\">Partner</a></nav><a class=\"rh-btn\" href=\"/#teardown\">Send me the teardown</a></div>",
+          "code": "<div class=\"rh-nav\"><a class=\"rh-brand\" href=\"/\"><span class=\"rh-dot\"></span><span class=\"rh-stack\"><span class=\"rh-nm\">Ron Davis</span><span class=\"rh-tg\">AI Visibility &amp; Marketplace GTM</span></span></a><nav class=\"rh-links\" aria-label=\"Primary\"><a href=\"/ai-visibility\">The table</a><a href=\"/newsletter\">Read</a><a href=\"/podcast\">Watch</a><a href=\"/work-with-me\">Work with me</a><a href=\"/about\">About</a><a href=\"/partner\">Partner</a></nav><a class=\"rh-btn\" href=\"/book-a-call\">Book a free call</a></div>",
           "width": "fill",
           "mobile_width": "fill"
         }
@@ -33,15 +37,33 @@
       }
     },
     "settings": {
-      "direction": "vertical", "align": "start", "position": "center", "gap": 0, "min_height": "auto", "full_width": true, "wrap": true,
-      "padding_desktop": {"top": 0, "right": 0, "bottom": 0, "left": 0},
-      "padding_mobile": {"top": 0, "right": 0, "bottom": 0, "left": 0}
+      "direction": "vertical",
+      "align": "start",
+      "position": "center",
+      "gap": 0,
+      "min_height": "auto",
+      "full_width": true,
+      "wrap": true,
+      "padding_desktop": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding_mobile": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      }
     }
   },
   "rhchrome_foot": {
     "type": "section",
     "name": "Site chrome — footer (ported from home)",
-    "block_order": ["rh_foot"],
+    "block_order": [
+      "rh_foot"
+    ],
     "blocks": {
       "rh_foot": {
         "type": "code",
@@ -54,9 +76,25 @@
       }
     },
     "settings": {
-      "direction": "vertical", "align": "start", "position": "center", "gap": 0, "min_height": "auto", "full_width": true, "wrap": true,
-      "padding_desktop": {"top": 28, "right": 0, "bottom": 28, "left": 0},
-      "padding_mobile": {"top": 24, "right": 0, "bottom": 24, "left": 0}
+      "direction": "vertical",
+      "align": "start",
+      "position": "center",
+      "gap": 0,
+      "min_height": "auto",
+      "full_width": true,
+      "wrap": true,
+      "padding_desktop": {
+        "top": 28,
+        "right": 0,
+        "bottom": 28,
+        "left": 0
+      },
+      "padding_mobile": {
+        "top": 24,
+        "right": 0,
+        "bottom": 24,
+        "left": 0
+      }
     }
   }
 }
