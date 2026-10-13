@@ -4,7 +4,11 @@
     "1758300000001": {
       "type": "section",
       "name": "Nav",
-      "block_order": ["home_css", "redo_css", "nav_0"],
+      "block_order": [
+        "home_css",
+        "redo_css",
+        "nav_0"
+      ],
       "blocks": {
         "redo_css": {
           "type": "code",
@@ -28,7 +32,11 @@
     "1758300000002": {
       "type": "section",
       "name": "Hero",
-      "block_order": ["hero_copy", "hero_photo", "hero_pill"],
+      "block_order": [
+        "hero_copy",
+        "hero_photo",
+        "hero_pill"
+      ],
       "blocks": {
         "hero_copy": {
           "type": "text",
@@ -52,7 +60,12 @@
     "1758300000003": {
       "type": "section",
       "name": "Delivered by hand",
-      "block_order": ["week_head", "week_1", "week_2", "week_3"],
+      "block_order": [
+        "week_head",
+        "week_1",
+        "week_2",
+        "week_3"
+      ],
       "blocks": {
         "week_head": {
           "type": "text",
@@ -83,34 +96,85 @@
     "1758300000004": {
       "type": "section",
       "name": "Work band",
-      "block_order": ["work_head", "work_1", "work_2", "work_3", "work_4"],
+      "block_order": [
+        "work_head",
+        "work_1",
+        "work_2",
+        "work_3",
+        "work_4"
+      ],
       "blocks": {
-        "work_head": { "type": "text", "settings": { "text": "<span class=\"rh-eye rh-eye--light\">Four ways to buy</span>" } },
-        "work_1": { "type": "text", "settings": { "text": "<a class=\"rh-work\" href=\"/offers/FudyCMoT/checkout\"><span class=\"rh-work-t\">The AI Visibility Audit Kit</span><span class=\"rh-work-m\">Scorecard, prompt tracker, file templates, runbook · $99</span></a>" } },
-        "work_2": { "type": "text", "settings": { "text": "<a class=\"rh-work\" href=\"/discovery-kit\"><span class=\"rh-work-t\">The Second Buyer Audit</span><span class=\"rh-work-m\">Written audit, 10 days · $2,500</span></a>" } },
-        "work_3": { "type": "text", "settings": { "text": "<a class=\"rh-work\" href=\"/coaching\"><span class=\"rh-work-t\">Listed to Chosen</span><span class=\"rh-work-m\">8 weeks, 6 shipped assets · $12,500</span></a>" } },
-        "work_4": { "type": "text", "settings": { "text": "<a class=\"rh-work\" href=\"/fractional-cmo\"><span class=\"rh-work-t\">Fractional Marketplace Lead</span><span class=\"rh-work-m\">Monthly position · $7,500/mo</span></a>" } }
+        "work_head": {
+          "type": "text",
+          "settings": {
+            "text": "<span class=\"rh-eye rh-eye--light\">Four ways to buy</span>"
+          }
+        },
+        "work_1": {
+          "type": "text",
+          "settings": {
+            "text": "<a class=\"rh-work\" href=\"/offers/FudyCMoT/checkout\"><span class=\"rh-work-t\">The AI Visibility Audit Kit</span><span class=\"rh-work-m\">Scorecard, prompt tracker, file templates, runbook · $99</span></a>"
+          }
+        },
+        "work_2": {
+          "type": "text",
+          "settings": {
+            "text": "<a class=\"rh-work\" href=\"/discovery-kit\"><span class=\"rh-work-t\">The Second Buyer Audit</span><span class=\"rh-work-m\">Written audit, 10 days · $2,500</span></a>"
+          }
+        },
+        "work_3": {
+          "type": "text",
+          "settings": {
+            "text": "<a class=\"rh-work\" href=\"/coaching\"><span class=\"rh-work-t\">Listed to Chosen</span><span class=\"rh-work-m\">8 weeks, 6 shipped assets · $12,500</span></a>"
+          }
+        },
+        "work_4": {
+          "type": "text",
+          "settings": {
+            "text": "<a class=\"rh-work\" href=\"/fractional-cmo\"><span class=\"rh-work-t\">Fractional Marketplace Lead</span><span class=\"rh-work-m\">Monthly position · $7,500/mo</span></a>"
+          }
+        }
       }
     },
     "1758300000005": {
       "type": "section",
       "name": "Receipts",
-      "block_order": ["rec_1", "rec_2", "rec_3", "rec_pills"],
+      "block_order": [
+        "rec_1",
+        "rec_2",
+        "rec_3",
+        "rec_pills"
+      ],
       "blocks": {
-        "rec_2": { "type": "text", "settings": { "text": "<a class=\"rh-stat\" href=\"/offers/23mNyU7f/checkout?coupon=FOUNDING47\"><span class=\"rh-n\">596</span><span class=\"rh-l\">listings read the way a machine reads · the benchmark, $47 →</span></a>" } },
-        "rec_pills": { "type": "text", "settings": { "text": "<div class=\"rh-pills\"><a class=\"rh-pill-btn\" href=\"mailto:ron@vell.ai\">Email ron@vell.ai</a><a class=\"rh-pill-btn\" href=\"/book-a-call\">Book a free call</a></div>" } }
+        "rec_2": {
+          "type": "text",
+          "settings": {
+            "text": "<a class=\"rh-stat\" href=\"/offers/23mNyU7f/checkout?coupon=FOUNDING47\"><span class=\"rh-n\">596</span><span class=\"rh-l\">listings read the way a machine reads · the benchmark, $47 →</span></a>"
+          }
+        },
+        "rec_pills": {
+          "type": "text",
+          "settings": {
+            "text": "<div class=\"rh-pills\"><a class=\"rh-pill-btn\" href=\"mailto:ron@vell.ai\">Email ron@vell.ai</a><a class=\"rh-pill-btn\" href=\"/book-a-call\">Book a free call</a></div>"
+          }
+        }
       }
     },
     "1758300000006": {
       "type": "section",
       "name": "Footer",
       "blocks": {
-        "foot_0": { "type": "text", "settings": { "text": "<footer class=\"rh-foot\"><span>© 2026 Ron Davis · itsrondavis.com · <a class=\"rh-mail\" href=\"mailto:ron@vell.ai\">ron@vell.ai</a></span><nav class=\"rh-fnav\" aria-label=\"Footer\"><a href=\"/about\">About</a><a href=\"/contact\">Contact</a><a href=\"/partner\">Partner</a><a href=\"/resources\">Resources</a><a href=\"/blog\">Blog</a><a href=\"/privacy\">Privacy</a><a href=\"/terms\">Terms</a><a href=\"/disclaimer\">Disclaimer</a></nav></footer>" } }
+        "foot_0": {
+          "type": "text",
+          "settings": {
+            "text": "<footer class=\"rh-foot\"><span>© 2026 Ron Davis · itsrondavis.com · <a class=\"rh-mail\" href=\"mailto:ron@vell.ai\">ron@vell.ai</a></span><nav class=\"rh-fnav\" aria-label=\"Footer\"><a href=\"/about\">About</a><a href=\"/contact\">Contact</a><a href=\"/partner\">Partner</a><a href=\"/resources\">Resources</a><a href=\"/blog\">Blog</a><a href=\"/privacy\">Privacy</a><a href=\"/terms\">Terms</a><a href=\"/disclaimer\">Disclaimer</a></nav></footer>"
+          }
+        }
       }
     }
   },
   "landing_page_seo": {
-    "page_title": "Ron Davis — AI Visibility & AWS Marketplace GTM | Audits delivered in writing",
-    "page_description": "Ron Davis audits websites and AWS Marketplace listings the way ChatGPT, Perplexity, Claude and Gemini read them, then delivers the fixes in order: a written audit ($2,500), the AI Visibility Audit Kit ($99), an 8-week sprint, or a fractional marketplace lead. Eight years inside AWS Marketplace. Free 30-minute call, or email ron@vell.ai."
+    "page_title": "Ron Davis — AI Visibility & AWS Marketplace GTM | Written audits",
+    "page_description": "Ron Davis audits websites and AWS Marketplace listings the way ChatGPT, Perplexity, Claude and Gemini read them, then delivers the fixes in order: a written audit ($2,500), the $99 AI Visibility Audit Kit, an 8-week sprint, or a fractional lead. Free 30-minute call, or email ron@vell.ai."
   }
 }
