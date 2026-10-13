@@ -368,6 +368,17 @@ The route: Audit → Inhibitor Sweep (if any inhibitor is present) → Retrieval
 
 **Fastest path:** copy [`pack/ai-visibility-skill-pack.md`](pack/ai-visibility-skill-pack.md) into your model's project knowledge and say *"Run the Blank-Square Audit on this page"* with your page's text pasted underneath.
 
+## Run it on your own page
+
+The machine-checkable half of the audit is a script. It fetches one page plus its robots.txt, sitemap.xml, llms.txt and agents.txt, settles every element a script can settle, and leaves the rest Pending with the exact check to run by hand.
+
+```
+node scripts/audit.mjs https://www.example.com/ --out audits/example.md
+node scripts/audit.mjs https://www.itsrondavis.com/ --llms-origin https://agents.itsrondavis.com --out audits/home.md
+```
+
+Node 18 or newer, no dependencies. Add `--html saved.html` to score a page you saved from View Source instead of fetching it. The markdown scorecard and a JSON twin land at `--out`. For the squares the script leaves Pending, run [the Blank-Square Audit skill](skills/ai-visibility-audit/SKILL.md) with the pasted page.
+
 ## Who made this, and from what
 
 Ron Davis spent eight years inside AWS Marketplace in technical business development, covering go-to-market for more than 3,000 AWS partners, and left in June 2026. The last eighteen months of that were spent on products where the buyer is an AI agent, not a person. Listings written for humans were unreadable to the agent. Being listed was not being chosen.
