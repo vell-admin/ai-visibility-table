@@ -1,0 +1,100 @@
+{
+  "_note": "Restore payload for the itsrondavis.com home (landing page 2152082106, theme 2166393107) as it was before the 2026-10-13 redo. Contains only the blocks the redo changed; pass this object as `settings` to update_theme_content to revert. Block `home_css` was not touched by the redo and is not included.",
+  "sections": {
+    "1758300000001": {
+      "type": "section",
+      "block_order": ["home_css", "nav_0"],
+      "blocks": {
+        "nav_0": {
+          "type": "text",
+          "settings": {
+            "text": "<div class=\"rh-nav\"><a class=\"rh-brand\" href=\"/\"><span class=\"rh-dot\"></span><span class=\"rh-stack\"><span class=\"rh-nm\">Ron Davis</span><span class=\"rh-tg\">Marketplace &amp; AI Visibility GTM</span></span></a><nav class=\"rh-links\" aria-label=\"Primary\"><a href=\"/podcast\">Watch</a><a href=\"/newsletter\">Read</a><a href=\"/ai-visibility\">AI Visibility</a><a href=\"/work-with-me\">Work with me</a><a href=\"/about\">About</a><a href=\"/partner\">Partner</a></nav><a class=\"rh-btn\" href=\"#teardown\">Send me the teardown</a></div>"
+          }
+        }
+      }
+    },
+    "1758300000002": {
+      "type": "section",
+      "block_order": ["hero_copy", "hero_form", "hero_photo", "hero_pill"],
+      "blocks": {
+        "hero_copy": {
+          "type": "text",
+          "settings": {
+            "text": "<div class=\"rh-hero-copy\"><span class=\"rh-eye\">Eight years inside AWS Marketplace</span><h1>If a machine reads your page before your buyer does, this is for you.</h1><p class=\"rh-lede\">I read 596 pages the way that machine reads them. Every week I tear one down: what it read, what it skipped, and the fix in the order to do it. Free.</p><span id=\"teardown\" class=\"rh-anchor\"></span></div>"
+          }
+        }
+      }
+    },
+    "1758300000007": {
+      "type": "section",
+      "blocks": {
+        "aiv_head": {
+          "type": "text",
+          "settings": {
+            "text": "<div class=\"rh-shead\"><div><span class=\"rh-eye\">Free · wallchart, data and eight skills</span><h2>The Periodic Table of AI Visibility</h2></div><a class=\"rh-more\" href=\"/ai-visibility\">Open the wallchart →</a></div>"
+          }
+        }
+      }
+    },
+    "1758300000003": {
+      "type": "section",
+      "name": "This week, in three formats",
+      "block_order": ["week_head", "week_1", "week_2", "week_3"],
+      "blocks": {
+        "week_head": {
+          "type": "text",
+          "settings": {
+            "text": "<div class=\"rh-shead\"><h2>This week, in three formats</h2><a class=\"rh-more\" href=\"/podcast\">All episodes →</a></div>"
+          }
+        },
+        "week_1": {
+          "type": "text",
+          "settings": {
+            "text": "<a class=\"rh-card\" href=\"https://www.youtube.com/shorts/gCmSgZ7FSGg\" target=\"_blank\" rel=\"noopener\"><img class=\"rh-thumb\" src=\"https://i.ytimg.com/vi/gCmSgZ7FSGg/maxresdefault.jpg\" alt=\"\" loading=\"lazy\"><span class=\"rh-k\">Video · YouTube</span><span class=\"rh-card-t\">Is your website actually clear to A.I. agents?</span><span class=\"rh-card-d\">A 10-minute audit: open your own page and read it out loud as a stranger.</span></a>"
+          }
+        },
+        "week_2": {
+          "type": "text",
+          "settings": {
+            "text": "<a class=\"rh-card\" href=\"/newsletters/the-weekly-teardown/posts/your-next-buyer-is-an-agent-it-won-t-watch-your-demo\"><span class=\"rh-thumb rh-thumb--tile rh-thumb--nl\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 4h16v16H4z\"/><path d=\"M8 9h8M8 13h8M8 17h5\"/></svg></span><span class=\"rh-k\">Teardown · Newsletter</span><span class=\"rh-card-t\">Your next buyer is an agent. It won’t watch your demo.</span><span class=\"rh-card-d\">If an assistant can’t parse your listing, you’re out before a human ever sees your slides.</span></a>"
+          }
+        },
+        "week_3": {
+          "type": "text",
+          "settings": {
+            "text": "<a class=\"rh-card\" href=\"/podcast\"><span class=\"rh-thumb rh-thumb--tile rh-thumb--pod\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"9\" y=\"3\" width=\"6\" height=\"11\" rx=\"3\"/><path d=\"M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8\"/></svg></span><span class=\"rh-k\">Podcast</span><span class=\"rh-card-t\">The Marketplace GTM Podcast</span><span class=\"rh-card-d\">Launching soon. Four episodes in the pipeline.</span></a>"
+          }
+        }
+      }
+    },
+    "1758300000004": {
+      "type": "section",
+      "block_order": ["work_head", "work_1", "work_2", "work_3", "work_4"],
+      "blocks": {
+        "work_head": { "type": "text", "settings": { "text": "<span class=\"rh-eye rh-eye--light\">When you want it done</span>" } },
+        "work_1": { "type": "text", "settings": { "text": "<a class=\"rh-work\" href=\"/offers/23mNyU7f/checkout?coupon=FOUNDING47\"><span class=\"rh-work-t\">The Marketplace Listing Benchmark</span><span class=\"rh-work-m\">596 listings scored · PDF + CSV · $47</span></a>" } },
+        "work_2": { "type": "text", "settings": { "text": "<a class=\"rh-work\" href=\"/discovery-kit\"><span class=\"rh-work-t\">The Second Buyer Audit</span><span class=\"rh-work-m\">Written audit, 10 days · $2,500</span></a>" } },
+        "work_3": { "type": "text", "settings": { "text": "<a class=\"rh-work\" href=\"/coaching\"><span class=\"rh-work-t\">Listed to Chosen</span><span class=\"rh-work-m\">8 weeks, 6 shipped assets · $12,500</span></a>" } },
+        "work_4": { "type": "text", "settings": { "text": "<a class=\"rh-work\" href=\"/fractional-cmo\"><span class=\"rh-work-t\">Fractional Marketplace Lead</span><span class=\"rh-work-m\">Monthly position · $7,500/mo</span></a>" } }
+      }
+    },
+    "1758300000005": {
+      "type": "section",
+      "block_order": ["rec_1", "rec_2", "rec_3", "rec_pills"],
+      "blocks": {
+        "rec_2": { "type": "text", "settings": { "text": "<div class=\"rh-stat\"><span class=\"rh-n\">596</span><span class=\"rh-l\">listings read the way a machine reads</span></div>" } },
+        "rec_pills": { "type": "text", "settings": { "text": "<div class=\"rh-pills\"><a class=\"rh-pill-btn\" href=\"/partner\">Sponsor an episode</a><a class=\"rh-pill-btn\" href=\"/gear\">Gear I shoot with</a></div>" } }
+      }
+    },
+    "1758300000006": {
+      "type": "section",
+      "blocks": {
+        "foot_0": { "type": "text", "settings": { "text": "<footer class=\"rh-foot\"><span>© 2026 Ron Davis · itsrondavis.com</span><nav class=\"rh-fnav\" aria-label=\"Footer\"><a href=\"/about\">About</a><a href=\"/partner\">Partner</a><a href=\"/gear\">Gear</a><a href=\"/resources\">Resources</a><a href=\"/blog\">Blog</a><a href=\"/privacy\">Privacy</a><a href=\"/terms\">Terms</a><a href=\"/disclaimer\">Disclaimer</a></nav></footer>" } }
+      }
+    }
+  },
+  "landing_page_seo_before": {
+    "page_title": "Ron Davis — Listed to Chosen | Marketplace & AI Visibility GTM",
+    "page_description": "Ron Davis helps software, data and AI companies — and any business a machine reads first — get read correctly, get bought, and get chosen from inside the room where the decision happens. Eight years inside AWS Marketplace. The Second Buyer Audit reads your page or your listing, $2,500."
+  }
+}
