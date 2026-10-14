@@ -43,3 +43,32 @@ Fix: one `update_theme_content` per page with the new `rh_nav` block text (same 
 ## 4. One name, one day
 
 Four names for one email (the weekly teardown · the field notes · Listed to Bought · the table updates) and two send days (Tuesday · Saturday). Pick one of each before touching the 18 navs, so the port carries the final wording.
+
+---
+
+## Resolved 2026-10-14 — the newsletter is **Table Stakes**, sent **Tuesdays**
+
+Ron's call: one name, "Table Stakes" (the periodic table, plus the bare minimum to stay in the game of being named, preferably in the top three), one send day, Tuesday. Applied live through the Kajabi MCP:
+
+| Where | Now says |
+|---|---|
+| Home, section 007 form (`aiv_form`) | kicker "Table Stakes · Tuesdays", button "Send me Table Stakes", disclaimer "One email a week, on Tuesday." |
+| `/newsletter` hero (theme 2166393447) | eyebrow "Table Stakes · Tuesdays", H1 "The bare minimum to stay in the running.", lede rewritten, "Every issue, no paywall", footer "Get Table Stakes"; page title "Table Stakes — Ron Davis Newsletter" + new description |
+| `/newsletter-subscribe` (2166406350) | H1 "Join Table Stakes", "every Tuesday" |
+| `/work-with-me` capture (2166393442, section 1788280100001) | "// Table Stakes · Tuesdays", H2 "Table Stakes.", form "Get Table Stakes" / "Send me Table Stakes" |
+| `/ai-visibility` capture (2167839250, `ptv_form`) | "New editions and the checklist version go to Table Stakes first.", button "Send me Table Stakes" |
+| `/get-read` capture (2167444261, `gr_cap`, form 2149729559) | "Next Tuesday I run these checks on someone else's page.", button "Send me Table Stakes"; in-body footer link |
+| `/next-steps` (2156601702) | "The next Table Stakes lands in your inbox on Tuesday."; card label "Table Stakes · Newsletter" |
+| `/podcast` (2166393449) | "plus Table Stakes, the Tuesday email"; footer link |
+| `/resources` (2166393448) | "Want it emailed, plus Table Stakes every Tuesday?"; footer link (vell.ai line left as is, Ron's call) |
+| `/book-a-call`, `/about`, `/coaching`, `/foundry` in-body footers | "Get Table Stakes" |
+| `/foundry` page description | "frameworks, templates, and breakdowns" |
+| Kajabi form 2149622400 | admin name "Table Stakes (newsletter) form" |
+| agents.itsrondavis.com `llms.txt` / `agents.txt` | newsletter line names Table Stakes, Tuesdays |
+
+Still carrying the old name, admin-only or not editable from here:
+- Newsletter product 2147886456 is titled "The Weekly Teardown" and its posts live at `/newsletters/the-weekly-teardown/...`. Rename in Kajabi admin → Newsletters → settings. Changing the slug changes post URLs (the one published post is linked from `/next-steps`), so keep the slug unless you want to update that link too.
+- Form 2149729559 (the `/get-read` capture with the lane question) keeps its admin name.
+- Site theme 2156017046 footer block "Get the weekly teardown" is `hidden: true`; it does not render.
+- The old `rd-embed` navs inside the body of about/coaching/foundry/podcast/resources/newsletter/book-a-call still say "AWS Marketplace GTM"; they are covered by the ported chrome and were left alone.
+- YouTube description template: "Newsletter → /newsletter" is fine; the vell.ai line is Ron's call.

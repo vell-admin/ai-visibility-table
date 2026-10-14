@@ -65,7 +65,7 @@ Group with the most Blank squares: **Measurement** (5 of 8). Nothing is being me
 | 37 | Ca Calculator | Blank | The Second Buyer Score depends on vell.ai, which is offline. | q |
 | 38 | Sh Screenshot | Present | The wallchart social card, with alt text. | d |
 | 39 | Vo Video | Present | 31 videos on the channel; hero embeds one. | w |
-| 40 | Ni Newsletter | Present | Listed to Bought / the weekly teardown (one name to pick). | q |
+| 40 | Ni Newsletter | Present | Table Stakes, Tuesdays (renamed 2026-10-14; was four names and two send days). | q |
 | 41 | Tp Template | Present | Eight skills, three file templates in the kit. | w |
 
 ### Channels

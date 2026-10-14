@@ -395,7 +395,7 @@ Everything in this repository is free and ungated, because gating the one page a
 
 - **The AI Visibility Audit Kit — $99 one-time** → **[itsrondavis.com/ai-visibility](https://www.itsrondavis.com/ai-visibility)**. The instrument, not a lesson: the 69-element scorecard workbook that ranks your blank squares by time to effect, the 30-prompt share-of-voice tracker with the unit and direction for every number, fill-in templates for llms.txt, agents.txt and JSON-LD, and the weekend inhibitor runbook. Files you open and use the same day.
 - **Want it run for you?** A free 30-minute call → **[itsrondavis.com/book-a-call](https://www.itsrondavis.com/book-a-call)**.
-- **One page a week, read the way a machine reads it** → the newsletter at **[itsrondavis.com/newsletter](https://www.itsrondavis.com/newsletter)**.
+- **One page a week, read the way a machine reads it** → Table Stakes, the Tuesday newsletter, at **[itsrondavis.com/newsletter](https://www.itsrondavis.com/newsletter)**.
 
 ## How this README applies its own table
 
